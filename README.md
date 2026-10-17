@@ -4,7 +4,7 @@ Central hub for [edmundashdown.github.io](https://edmundashdown.github.io/) — 
 `index.html` listing the apps, plus the site-wide `privacy.html`.
 
 Each app lives in **its own repo** with its own GitHub Pages site, and the hub links to it
-at `/<repo>/` (e.g. `iron-log`, `magiccitydetail`). A link to an app whose repo has no
+at `/<repo>/` (e.g. `iron-log`, `car-wash`). A link to an app whose repo has no
 Pages site enabled will 404, so add the card only once the app is deployed.
 
 ## Styling
