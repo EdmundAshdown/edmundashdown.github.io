@@ -1,7 +1,7 @@
 # edmundashdown.github.io
 
-Central hub for [edmundashdown.github.io](https://edmundashdown.github.io/) — a single
-static `index.html` listing the apps.
+Central hub for [edmundashdown.github.io](https://edmundashdown.github.io/) — a static
+`index.html` listing the apps, plus the site-wide `privacy.html`.
 
 Each app lives in **its own repo** with its own GitHub Pages site, and the hub links to it
 at `/<repo>/` (e.g. `iron-log`, `magiccitydetail`). A link to an app whose repo has no
@@ -14,8 +14,8 @@ Tailwind is compiled to a static stylesheet. There is no CDN and no runtime buil
 **`css/styles.css` is committed** — GitHub Pages serves this repo statically and does not
 run a build step, so the built file must be in the repo.
 
-After editing `index.html` (especially when adding new utility classes), rebuild and
-commit the output:
+After editing `index.html` or `privacy.html` (especially when adding new utility classes),
+rebuild and commit the output:
 
 ```sh
 npm install        # first time only
@@ -26,5 +26,5 @@ npm run build:css  # rewrites css/styles.css
 
 Source of truth for the stylesheet is `src/input.css` plus the theme in
 `tailwind.config.js` (the `brand` colour ramp and `darkMode: 'class'`). Tailwind scans
-`./index.html` for class names, including classes that appear only inside JavaScript
-strings.
+`./index.html` and `./privacy.html` for class names (the `content` array), including
+classes that appear only inside JavaScript strings.
